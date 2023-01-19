@@ -11,6 +11,10 @@ export default App;
 
 
 /*
+
+    Todas imagens selecionadas para aplicar no site
+    
+
  images links :
  https://unsplash.com/pt-br/fotografias/_4qQsmE4VdA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 
@@ -34,5 +38,15 @@ https://unsplash.com/pt-br/fotografias/4CrPpv9TFr8?utm_source=unsplash&utm_mediu
 https://unsplash.com/pt/fotografias/M1y4TFQ9zVk?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 
 https://unsplash.com/pt/fotografias/fdlZBWIP0aM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+https://unsplash.com/pt-br/fotografias/vnSsWtWd8po?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+https://unsplash.com/pt-br/fotografias/T7heq8rawkc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+https://unsplash.com/pt-br/fotografias/HSKUAXF-LEU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+https://unsplash.com/pt/fotografias/yhc4pSbl01A?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+https://unsplash.com/pt-br/fotografias/WHtVB-RiW2I?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 
 */
