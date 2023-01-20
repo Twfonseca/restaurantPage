@@ -3,7 +3,9 @@ import React from 'react'
 
 function MenuFood(){
     return(
-        ''
+        <section>
+            
+        </section>
     )
 }
 

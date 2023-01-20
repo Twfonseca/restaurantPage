@@ -3,7 +3,14 @@ import React from 'react'
 
 function FooterLinks(){
     return(
-        ''
+        <footer>
+            <section>
+                
+            </section>
+            <section>
+                
+            </section>
+        </footer>
     )
 }
 
