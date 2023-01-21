@@ -2,8 +2,64 @@
 
 font para logo / revisar cores */
 
+:root{
+  --bkgColor:#000000;
+  --fontColor:#ffffff;
+  --fontColor2:#000000;
+}
+
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+body{
+  background-color: var(--bkgColor);
+}
+
+
+
+
+@media screen and (min-width:0px){
+
+  .sectionContainer{
+    width: 100vw;
+    height: 100vh;    
+  }
+
+  .bannerBkg{
+    background-image: url("../src/images/firtsBannerMobile.jpg");
+    background-size: 100% 100%;
+  }
+
+  .menuNavContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .linkStyle{
+    padding: 15px 0px;
+    font-weight: 700;
+    text-decoration: none;
+    color:var(--fontColor)
+  }
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width:600px){
+  
+  .bannerBkg{
+    background: url(../src//images/restaurant-area.jpg) no-repeat center;
+    background-size: 100% 100%;
+  ;
+  }
+
 }

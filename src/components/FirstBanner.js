@@ -1,13 +1,12 @@
 import '../App.css';
 import React from 'react'
+import HeaderMenu from './HeaderMenu';
 
 function FirstBanner(){
     return(
-        <footer>
-            <section>
-                
-            </section>
-        </footer>
+        <section className='sectionStyle bannerBkg'> 
+            <HeaderMenu></HeaderMenu>
+        </section>
     )
 }
 

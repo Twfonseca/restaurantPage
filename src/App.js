@@ -1,8 +1,9 @@
 import './App.css';
+import FirstBanner from './components/FirstBanner';
 
 function App() {
   return (
-   ""
+   <FirstBanner></FirstBanner>
   );
 }
 
@@ -49,4 +50,9 @@ https://unsplash.com/pt/fotografias/yhc4pSbl01A?utm_source=unsplash&utm_medium=r
 
 https://unsplash.com/pt-br/fotografias/WHtVB-RiW2I?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 
+https://unsplash.com/pt-br/fotografias/boaDpmC-_Xo?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+https://unsplash.com/pt-br/fotografias/N_Y88TWmGwA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
 */
+
