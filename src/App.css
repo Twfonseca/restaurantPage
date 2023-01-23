@@ -1,6 +1,4 @@
-/*   font-family: 'Great Vibes', cursive;
-
-font para logo / revisar cores */
+/*    */
 
 :root{
   --bkgColor:#000000;
@@ -25,8 +23,9 @@ body{
 
   .sectionContainer{
     width: 100vw;
-    height: 100vh;    
+    height: 100vh;  
   }
+
 
   .bannerBkg{
     background-image: url("../src/images/firtsBannerMobile.jpg");
@@ -43,9 +42,30 @@ body{
     padding: 15px 0px;
     font-weight: 700;
     text-decoration: none;
-    color:var(--fontColor)
+    color:var(--fontColor);
   }
 
+  .sectionContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+.restaurantName{
+  font-family: 'Luxurious Script', cursive;
+  font-size: 4rem;
+  text-align: center;
+  margin: 90px 0px -9px -7px;
+  color:var(--fontColor);
+  font-weight: 300;
+}
+
+.subtitleStyle{
+  color: var(--fontColor);
+  margin: 0px 0px 0px 90px;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 400;
 }
 
 
@@ -54,7 +74,11 @@ body{
 
 
 
-@media screen and (min-width:600px){
+
+}
+
+
+@media screen and (min-width:520px){
   
   .bannerBkg{
     background: url(../src//images/restaurant-area.jpg) no-repeat center;

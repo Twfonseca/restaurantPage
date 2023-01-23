@@ -1,9 +1,14 @@
 import './App.css';
 import FirstBanner from './components/FirstBanner';
 
+
 function App() {
   return (
-   <FirstBanner></FirstBanner>
+    <section>
+      <FirstBanner></FirstBanner>
+
+    </section>
+
   );
 }
 
