@@ -1,11 +1,15 @@
 import './App.css';
+import AboutSection from './components/AboutSection';
 import FirstBanner from './components/FirstBanner';
+import MenuFood from './components/MenuFood';
 
 
 function App() {
   return (
     <section>
       <FirstBanner></FirstBanner>
+      <AboutSection></AboutSection>
+      <MenuFood></MenuFood>
 
     </section>
 
