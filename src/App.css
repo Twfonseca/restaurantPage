@@ -120,6 +120,17 @@ body{
   border-bottom: 1px solid #ffffff;
 }
 
+.textMenuFoodStyle{
+  color: var(--fontColor);
+}
+
+.menuImgAndTextContainer{
+ display:  flex;
+ flex-wrap: wrap;
+ width: 80vw;
+ margin: 0px 10%;
+}
+
 
 
 
