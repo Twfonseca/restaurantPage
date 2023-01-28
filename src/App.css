@@ -131,6 +131,18 @@ body{
  margin: 0px 10%;
 }
 
+.btnsContainerOfMenu{
+  width: 80vw;
+  margin:40px 10% ;
+  display:  flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menuItensChange{
+  width: 80px;
+  padding: 7px ;
+}
 
 
 

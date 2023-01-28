@@ -41,12 +41,6 @@ import baklawaSweet from '../images/sweet/Baklawa.jpg'
                     O botão de voltar ira subtrair -1 ao contador da seção que corresponde a um elemento do array e se chegarmos ao valor minimo que é 0 a contagem volta ao valor maximo que é o length da seção 
 
         AMBOS OS BOTÕES ( AVANÇAR E RETROCEDER ) IRÃO ADICIONAR UM BACKGROUND NA SEÇÃO CORRESPONDENTE AO ELEMENTO QUE ESTA SENDO VISUALIZADO 
-
-
-
-
-
-
 */
 
 function MenuFood(){
@@ -98,71 +92,79 @@ function MenuFood(){
             price:'25,00',
             photo:kebabWithSalad
         }, 
-        {   name:'',
-            ingredients:'',
-            description:'',
-            price:'',
+        {   name:'Kebab with souce',
+            ingredients:'Meat and special souces',
+            description:'A juicy meat with special souces',
+            price:'20,00',
             photo:kebabAndSouces
         }, 
-        {   name:'',
-            ingredients:'',
-            description:'',
-            price:'',
+        {   name:'Traditional Kebab',
+            ingredients:'meat, potatoes, tomamotes and onion',
+            description:'The traditional kebab meat with delicious fried potatoes',
+            price:'20,00',
             photo:kebabAndFries
         }, 
-        {   name:'',
-            ingredients:'',
-            description:'',
-            price:'',
+        {   name:'purple lettuce',
+            ingredients:'purple lettuce, fresh seasons',
+            description:'A fresh purple lettuce salad with special seasons',
+            price:'10,00',
             photo:saladLunch
         }, 
-        {   name:'',
-            ingredients:'',
-            description:'',
-            price:'',
+        {   name:'Complete Lunch',
+            ingredients:'avocado, rice, almonds, mangos, Green cabbage, String bean, chickpea and onion',
+            description:'A delicious and complet lunch with all the best flavors and seasons of Mediterranean',
+            price:'40,00',
             photo:completSaladLunch
         }, 
-        {   name:'',
-            ingredients:'',
-            description:'',
-            price:'',
+        {   name:'Pepper Soup',
+            ingredients:'Pepper, String bean, basil and boiled potatoe',
+            description:'Warm and comfort-food with an unforgettable season ',
+            price:'20,00',
             photo:hotSoup
         }, 
-        {   name:'',
-            ingredients:'',
-            description:'',
+        {   name:'Hot chicken',
+            ingredients:'chicken, pepper, milk and seasons',
+            description:'A healthy soup with a confort-food taste',
             price:'',
             photo:chiliChicken
         }])
 
         const [juiceMenu, setJuiceMenu]= useState([
-        {   name:'',
-            ingredients:'',
-            description:'',
-            price:'',
+        {   name:'Green juice',
+            ingredients:'Lemon, mint, spices and water',
+            description:'A fresh and  healthy juice',
+            price:'4,00',
             photo:greenJuice
         },
-        {   name:'',
-            ingredients:'',
-            description:'',
-            price:'',
+        {   name:'Orange juice',
+            ingredients:'Orange, carrot, sugar and water',
+            description:'The classic orange juice with chef is special ingredient ',
+            price:'4,00',
             photo:orangeJuice
         },
-        {   name:'',
-            ingredients:'',
-            description:'',
-            price:'',
+        {   name:'Pomegranate juice',
+            ingredients:'Pomegranate, water and sugar ',
+            description:'Delicious and cold pomegranate juice',
+            price:'5,00',
             photo:pomeGranadeJuice
         }])
 
 
         const[sweetMenu, setSweetMenu]=useState(
-            {   name:'',
-                ingredients:'',
-                description:'',
-                price:'',
+            {   name:'Baklawa',
+                ingredients:'Filo pastry, nuts, butter, cinnamon, honey, water, vanilla',
+                description:'A classic Middle Eastern dessert. Sweet, crunchy and tasty',
+                price:'10,00',
                 photo:baklawaSweet
             })
+
+
+        function loadBreakFast(){
+
+        }
+
+
+            
 
 
     return(
@@ -185,6 +187,10 @@ function MenuFood(){
                     <p className='textMenuFoodStyle'>Description:</p>
                     <p className='textMenuFoodStyle'>Price:</p>
                 </div>
+            </div>
+            <div className='btnsContainerOfMenu'>
+                <button className='menuItensChange'>Previous</button> 
+                <button className='menuItensChange'>Next</button>
             </div>
             
         </section>
