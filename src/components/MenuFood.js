@@ -1,5 +1,5 @@
 import '../App.css';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import completeBreakfast from '../images/breakfast/completBreakfast.jpg'
 import kaakBreakfast from '../images/breakfast/kaak.jpg'
 import pancakeBreakfast from '../images/breakfast/pancake.jpg'
@@ -149,6 +149,11 @@ function MenuFood(){
             photo:pomeGranadeJuice
         }])
 
+        const[menuIndex, setmenuIndex]=useState(0)
+
+            useEffect(()=>{
+                    loadBreakFast()
+            })
 
         const[sweetMenu, setSweetMenu]=useState(
             {   name:'Baklawa',
@@ -158,39 +163,58 @@ function MenuFood(){
                 photo:baklawaSweet
             })
 
+            let imageSelected
+
 
         function loadBreakFast(){
+            let foodName= document.querySelector("#disheName")
+            let foodIngradients= document.querySelector("#disheIngredients")
+            let foodDescription= document.querySelector("#disheDescription")
+            let foodPrice= document.querySelector("#dishePrice")
+
+            foodName.innerText=breakfastItens[menuIndex].name
+            foodIngradients.innerText= "Ingredients: "+breakfastItens[menuIndex].ingredients
+            foodDescription.innerText= "Description: "+breakfastItens[menuIndex].description
+            foodPrice.innerText="Price: "+breakfastItens[menuIndex].price
+            imageSelected= breakfastItens[menuIndex].photo 
 
         }
 
+        function nextItem(){
+            console.log(menuIndex)
+            if(menuIndex > 3){
+            setmenuIndex(0)
+            }
+            setmenuIndex(menuIndex+1)
 
-            
+
+        }
+
 
 
     return(
         <section className='menuSecStyle'>
             <h1>Menu</h1>
             <nav className='menuFoodsStyle'>
-                <button className='btnFoodsStyle'>Breakfast</button>
+                <button className='btnFoodsStyle'onClick={loadBreakFast}>Breakfast</button>
                 <button className='btnFoodsStyle'>Lunch</button>
                 <button className='btnFoodsStyle'>Juices</button>
-                <button className='btnFoodsStyle'>Desserts</button>
-                
+                <button className='btnFoodsStyle'>Desserts</button>    
             </nav>
             <div className='menuImgAndTextContainer'>
                 <div className='imgDisheContainer'>
-                            <img src={''}></img>
+                            <img id='disheImage'src={imageSelected}></img>
                 </div>
                 <div className=' disheDescriptionContainer'>
-                    <h4 className='textMenuFoodStyle'>Name</h4>
-                    <p className='textMenuFoodStyle'>Ingredients:</p>
-                    <p className='textMenuFoodStyle'>Description:</p>
-                    <p className='textMenuFoodStyle'>Price:</p>
+                    <h4 className='textMenuFoodStyle' id='disheName'>Name</h4>
+                    <p className='textMenuFoodStyle' id='disheIngredients'>Ingredients:</p>
+                    <p className='textMenuFoodStyle' id='disheDescription'>Description:</p>
+                    <p className='textMenuFoodStyle' id='dishePrice'>Price:</p>
                 </div>
             </div>
             <div className='btnsContainerOfMenu'>
                 <button className='menuItensChange'>Previous</button> 
-                <button className='menuItensChange'>Next</button>
+                <button className='menuItensChange' onClick={nextItem}>Next</button>
             </div>
             
         </section>
